@@ -1,26 +1,28 @@
 package org.example.dao;
 
 import org.example.model.xml.DataSource;
+import org.example.model.xml.DataSources;
 
 import java.sql.*;
 
 public class OracleDAOFactoryImpl implements DAOFactory {
 
-    public static final String DB_URL = "jdbc:oracle:thin:@//localhost:1521/XEPDB1";
-    public static final String DB_USERNAME = "hanna";
-    public static final String DB_PASSWORD = "parol1";
-    public static final String DRIVER = "oracle.jdbc.OracleDriver";
+    public final String DB_URL ;
+    public final String DB_USERNAME ;
+    public final String DB_PASSWORD ;
+    public final String DRIVER  ;
     private static Connection connection;
 
     public static OracleDAOFactoryImpl instance;
 
-    private OracleDAOFactoryImpl () {
+    public OracleDAOFactoryImpl (DataSource dataSource) {
+        DB_URL = dataSource.getConnectionurl();
+        DB_USERNAME = dataSource.getUsername();
+        DB_PASSWORD = dataSource.getPassword();
+        DRIVER = dataSource.getDriverclass();
     }
 
     public static OracleDAOFactoryImpl getInstance(){
-        if (instance == null) {
-            return new OracleDAOFactoryImpl();
-        }
         return instance;
     }
 

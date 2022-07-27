@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE datasources SYSTEM "dataSource.dtd">
+<?xml version="1.0" ?>
+<!DOCTYPE datasources SYSTEM "D:\practice22\practice22\test\Employees\src\main\resources\dataSource.dtd">
+
 <datasources>
     <datasource>
-        <source-name>practice_13</source-name>
+        <source-name>Employees</source-name>
         <connection-url>jdbc:oracle:thin:@//localhost:1521/XEPDB1</connection-url>
         <driver-class>oracle.jdbc.OracleDriver</driver-class>
         <user-name>hanna</user-name>

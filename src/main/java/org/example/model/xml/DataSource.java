@@ -1,12 +1,23 @@
 package org.example.model.xml;
 
-public class DataSource {
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
-    public String sourcename;
-    public String connectionurl;
-    public String driverclass;
-    public String username;
-    public String password;
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+public class DataSource {
+    @XmlElement(name = "source-name", required = true)
+    private String sourcename;
+    @XmlElement(name = "connection-url",required = true)
+    private String connectionurl;
+    @XmlElement(name = "driver-class",required = true)
+    private String driverclass;
+    @XmlElement(name = "user-name",required = true)
+    private String username;
+    @XmlElement(required = true)
+    private String password;
 
 
 
