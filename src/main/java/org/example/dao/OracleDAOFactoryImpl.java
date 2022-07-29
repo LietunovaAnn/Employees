@@ -20,6 +20,7 @@ public class OracleDAOFactoryImpl implements DAOFactory {
         DB_USERNAME = dataSource.getUsername();
         DB_PASSWORD = dataSource.getPassword();
         DRIVER = dataSource.getDriverclass();
+        instance = this;
     }
 
     public static OracleDAOFactoryImpl getInstance(){

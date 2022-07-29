@@ -5,13 +5,13 @@ import org.example.controller.MainController;
 import org.example.dao.DAOFactory;
 import org.example.dao.OracleDAOFactoryImpl;
 import org.example.model.xml.DataSources;
-import org.example.controller.XmlParse;
+import org.example.controller.jaxb.JaxbConvertetion;
 import org.example.view.MainView;
 
 public class Main {
     public static void main(String[] args) {
 
-        DataSources dataSources = XmlParse.jaxbXmlFileToObject("src/main/resources/dataSourceConnect.xml");
+        DataSources dataSources = JaxbConvertetion.jaxbXmlFileToObject("src/main/resources/dataSourceConnect.xml");
 
 
         DAOFactory factory = new OracleDAOFactoryImpl(dataSources.getDataSource());

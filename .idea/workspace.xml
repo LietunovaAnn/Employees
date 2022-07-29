@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb09cc7-4e31-4144-925b-2337a9a9054d" name="Changes" comment="pr13">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/XmlParse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/xml/DataSources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bbb09cc7-4e31-4144-925b-2337a9a9054d" name="Changes" comment="parse">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AddEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AddEmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/XmlParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/jaxb/JaxbConvertetion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/OracleDAOFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/OracleDAOFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/xml/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/xml/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/xml/XmlParse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataSource.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataSource.dtd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataSourceConnect.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataSourceConnect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/AddEmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/AddEmployeeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/UserScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/UserScanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,25 +41,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/semey/AppData/Roaming/JetBrains/IntelliJIdea2022.1/jdbc-drivers/Oracle/21.5.0.0/com/oracle/database/jdbc/ojdbc11/21.5.0.0/ojdbc11-21.5.0.0.jar",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/practice22/practice22/group1/StudentGrades/StudentGrades&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "oracle"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\practice22\practice22\test\Employees\src\main\resources" />
@@ -103,7 +100,12 @@
       <workItem from="1658850343011" duration="2671000" />
       <workItem from="1658862329574" duration="5324000" />
       <workItem from="1658906727344" duration="5810000" />
-      <workItem from="1658917984349" duration="18567000" />
+      <workItem from="1658917984349" duration="18977000" />
+      <workItem from="1658945014838" duration="2234000" />
+      <workItem from="1658988110016" duration="2642000" />
+      <workItem from="1659010680305" duration="11000" />
+      <workItem from="1659017513818" duration="1776000" />
+      <workItem from="1659092649637" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="pr13">
       <created>1658926666384</created>
@@ -112,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658926666384</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="parse">
+      <created>1658939967967</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658939967967</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pr13" />
-    <option name="LAST_COMMIT_MESSAGE" value="pr13" />
+    <MESSAGE value="parse" />
+    <option name="LAST_COMMIT_MESSAGE" value="parse" />
   </component>
 </project>

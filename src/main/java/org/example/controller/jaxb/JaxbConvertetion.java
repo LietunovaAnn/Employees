@@ -1,19 +1,18 @@
-package org.example.controller;
+package org.example.controller.jaxb;
 
 import org.example.model.xml.DataSources;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
 
-public class XmlParse {
+public class JaxbConvertetion {
     public static DataSources jaxbXmlFileToObject(String file) {
         DataSources dataSources = null;
         try {

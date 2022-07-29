@@ -13,7 +13,6 @@ public class MainView implements View{
         System.out.println("3. Удалить сотрудника.");
         System.out.println("4. Выйти.");
         int number = UserScanner.checkChoosingRightNumber(1,4);
-
         return number;
     }
 

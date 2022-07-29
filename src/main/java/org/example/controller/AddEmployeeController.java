@@ -19,8 +19,6 @@ public class AddEmployeeController extends Controller {
         EmployeesDAOImpl employeesDAO = factory.getEmployeesDAO();
         boolean isEmployeeAdded = employeesDAO.addEmployee(view.readNewEmployee());
         view.printResult(isEmployeeAdded ? "успешно добавлен" : "не добавлен");
-
-
     }
 
     @Override
